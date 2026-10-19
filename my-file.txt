@@ -1,0 +1,14 @@
+What I corrected
+Your code	Corrected code
+Saved the original bytes as if they were encrypted	Uses fernet.encrypt(original) first
+No encrypt_file() function	Places encryption instructions inside def encrypt_file():
+print() had extra indentation	Places it correctly inside the function
+Key was loaded after file processing	Loads the key once, before the functions
+Your next step
+1. Replace the code and save with Ctrl + S.
+2. Run python encryption.py in PowerShell.
+3. Choose 1 to encrypt a file.
+4. When prompted, enter secret.txt.
+You should get a new file called secret.txt.encrypted.
+Important: This program assumes you're entering filenames from the current working directory. Keep secret.key safe, because losing it can mean losing access to your encrypted files.
+Tell me what happens when you test option 1. We'll verify it before moving on. 
